@@ -1,0 +1,72 @@
+body {
+  background-color: #F0EBE3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E4DCCF;
+  border: 10px solid #E4DCCF;
+  margin: -10px;
+  padding: 10px;
+}
+.navbar .left {
+  display: flex;
+  font-size: 20pt;
+}
+.navbar .left .logo {
+  color: #093f47;
+  margin-right: 10px;
+}
+.navbar .left .title {
+  font-weight: 600;
+}
+.navbar .center {
+  display: flex;
+  border: 2px solid transparent;
+  background-color: #F0EBE3;
+  border-radius: 25px;
+  padding: 0px 10px;
+  margin: 15px 0px;
+  height: 50px;
+  width: 45%;
+}
+.navbar .center p {
+  text-align: center;
+  color: #093f47;
+}
+.navbar .center input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  font-weight: 500;
+}
+.navbar .right {
+  display: flex;
+}
+.navbar .right button {
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  color: #093f47;
+  font-size: 18pt;
+}
+.navbar .right p {
+  margin-right: 20px;
+}
+.navbar .right .heart-icon :hover {
+  color: red;
+  cursor: pointer;
+}
+.navbar .right .cart-icon :hover {
+  color: green;
+  cursor: pointer;
+}
+.navbar .right .user-icon :hover {
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=Navbar-style.css.map */
