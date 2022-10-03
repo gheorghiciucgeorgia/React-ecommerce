@@ -29,9 +29,11 @@ export default function Navbar() {
                 </button>
                 <button>
                     <FontAwesomeIcon className="heart-icon" icon={faHeart} />
+                    <span className='ellipse'>0</span>
                 </button>
                 <button>
                     <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
+                    <span className='ellipse'>0</span>
                 </button>
 
             </div>

@@ -34,14 +34,20 @@ body {
 }
 .modalBackground .modalContainer .body form label {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .modalBackground .modalContainer .body form input {
   border: 2px solid #E4DCCF;
   border-radius: 25px;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   outline: none;
+}
+.modalBackground .modalContainer .body .errorMessage {
+  font-size: 12pt;
+  display: flex;
+  font-weight: 600;
+  color: red;
 }
 .modalBackground .modalContainer .footer .logbtn {
   border: 2px solid #E4DCCF;
