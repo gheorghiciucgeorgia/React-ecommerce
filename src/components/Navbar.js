@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import '../Styles/Navbar-style.scss';
+import '../Styles/Navbar/Navbar-style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShirt, faHeart, faSearch, faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Modal from './Modal';
