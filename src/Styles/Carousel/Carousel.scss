@@ -1,0 +1,84 @@
+@import '../General-style.scss';
+
+.carousel-container {
+    margin: 20px;
+
+    .Slide {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+
+        button {
+            position: absolute;
+            bottom: 20px;
+            margin: auto;
+            left: 40%;
+        }
+
+        .first-slide {
+            font-size: 55pt;
+            font-weight: 900;
+            top: 50px;
+            color: white;
+        }
+
+        .first-slidis {
+            top: 40%;
+            font-size: 55pt;
+            left: 20%;
+            font-weight: 600;
+            color: white;
+        }
+
+        .second-slide {
+            top: 40%;
+            font-size: 40pt;
+            left: 25%;
+            font-weight: 600;
+            color: white;
+        }
+
+        .second-slide-btn,
+        .third-slide-btn {
+            border: 3px solid $dark-blue;
+            border-radius: 25px;
+            background-color: $dark-blue;
+            padding: 20px 50px;
+            font-family: $font;
+            font-weight: 700;
+            color: $grey;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 25pt;
+        }
+
+        .second-slide-btn:hover,
+        .third-slide-btn:hover {
+            color: black;
+        }
+
+        .third-slide {
+            top: 40%;
+            font-size: 55pt;
+            left: 31%;
+            font-weight: 600;
+            color: white;
+        }
+
+        .fourth-slide {
+            top: 20%;
+            font-size: 40pt;
+            left: 10%;
+            font-weight: 600;
+            color: white;
+        }
+    }
+}

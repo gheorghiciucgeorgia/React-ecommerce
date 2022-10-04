@@ -1,13 +1,16 @@
 import React from 'react';
+import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';
-import Slider from '../components/Slider';
+import PageContent from '../components/PageContent';
+
 
 
 export default function Home() {
     return (
         <div>
             <Navbar />
-            <Slider />
+            <Carousel />
+            <PageContent />
         </div>
     )
 }

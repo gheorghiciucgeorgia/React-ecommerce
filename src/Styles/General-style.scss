@@ -1,12 +1,17 @@
 $font:'Montserrat', sans-serif;
 $beige:#F0EBE3;
 $grey:#E4DCCF;
+$greyer:#c2bdb5;
 $teal: #7D9D9C;
 $dark-blue: #576F72;
+$darkish-blue:#0b515c;
 $darker-blue: #093f47;
 
 body{
     background-color: $beige;
     font-family: $font;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 } 
