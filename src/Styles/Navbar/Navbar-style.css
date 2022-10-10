@@ -2,6 +2,9 @@ body {
   background-color: #F0EBE3;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .navbar {
@@ -9,7 +12,7 @@ body {
   justify-content: space-between;
   background-color: #E4DCCF;
   border: 10px solid #E4DCCF;
-  margin: -10px;
+  margin: -8px;
   padding: 10px;
 }
 .navbar .left {

@@ -1,0 +1,45 @@
+body {
+  background-color: #F0EBE3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: -1px -8px;
+  border: 2px solid #E4DCCF;
+  background-color: #E4DCCF;
+}
+.footer a {
+  text-decoration: none;
+  color: inherit;
+  color: #7D9D9C;
+}
+.footer .contact {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+.footer .pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 33%;
+  font-size: 15pt;
+}
+.footer .social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 33%;
+  font-size: 15pt;
+}
+.footer .social a {
+  color: black;
+}/*# sourceMappingURL=Footer.css.map */

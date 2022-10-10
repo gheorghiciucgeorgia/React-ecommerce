@@ -2,6 +2,9 @@ body {
   background-color: #F0EBE3;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .modalBackground {
@@ -15,6 +18,7 @@ body {
   position: fixed;
   background-color: rgba(228, 220, 207, 0.5);
   font-family: "Montserrat", sans-serif;
+  z-index: 100;
 }
 .modalBackground .modalContainer {
   width: 25%;

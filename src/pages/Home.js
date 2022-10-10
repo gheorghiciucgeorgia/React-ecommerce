@@ -1,9 +1,7 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
 import Navbar from '../components/Navbar';
+import Carousel from '../components/Carousel';
 import PageContent from '../components/PageContent';
-import Products from './Products';
-
 
 
 export default function Home() {
@@ -11,7 +9,7 @@ export default function Home() {
         <div>
             <Navbar />
             <Carousel />
-            <PageContent /> 
+            <PageContent />
         </div>
     )
 }

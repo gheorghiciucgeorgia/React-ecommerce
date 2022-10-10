@@ -2,4 +2,7 @@ body {
   background-color: #F0EBE3;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }/*# sourceMappingURL=General-style.css.map */

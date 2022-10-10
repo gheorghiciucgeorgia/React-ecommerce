@@ -2,4 +2,79 @@ body {
   background-color: #F0EBE3;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-}/*# sourceMappingURL=Slider.css.map */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-container {
+  margin: 20px;
+}
+.carousel-container .Slide {
+  position: relative;
+}
+.carousel-container .Slide img {
+  width: 100%;
+}
+.carousel-container .Slide p {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+.carousel-container .Slide button {
+  position: absolute;
+  bottom: 20px;
+  margin: auto;
+  left: 40%;
+}
+.carousel-container .Slide .first-slide {
+  font-size: 55pt;
+  font-weight: 900;
+  top: 50px;
+  color: white;
+}
+.carousel-container .Slide .first-slidis {
+  top: 40%;
+  font-size: 55pt;
+  left: 20%;
+  font-weight: 600;
+  color: white;
+}
+.carousel-container .Slide .second-slide {
+  top: 40%;
+  font-size: 40pt;
+  left: 25%;
+  font-weight: 600;
+  color: white;
+}
+.carousel-container .Slide .second-slide-btn,
+.carousel-container .Slide .third-slide-btn {
+  border: 3px solid #576F72;
+  border-radius: 25px;
+  background-color: #576F72;
+  padding: 20px 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #E4DCCF;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 25pt;
+}
+.carousel-container .Slide .second-slide-btn:hover,
+.carousel-container .Slide .third-slide-btn:hover {
+  color: black;
+}
+.carousel-container .Slide .third-slide {
+  top: 40%;
+  font-size: 55pt;
+  left: 31%;
+  font-weight: 600;
+  color: white;
+}
+.carousel-container .Slide .fourth-slide {
+  top: 20%;
+  font-size: 40pt;
+  left: 10%;
+  font-weight: 600;
+  color: white;
+}/*# sourceMappingURL=Carousel.css.map */

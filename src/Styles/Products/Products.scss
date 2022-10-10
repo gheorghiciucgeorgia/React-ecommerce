@@ -1,0 +1,22 @@
+@import '../General-style.scss';
+@import '../PageContent/PageContent.scss';
+
+.page-content {
+    margin-top: 0px !important;
+
+    .products-preview {
+        box-shadow: none !important;
+
+        .arrivals {
+            margin-bottom: 20px;
+
+            .product {
+                padding: 30px;
+
+                img {
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+}

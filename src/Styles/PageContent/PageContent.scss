@@ -40,6 +40,11 @@
             width: 70%;
         }
 
+        .links {
+            text-decoration: none;
+            color: black;
+        }
+
         .left {
             display: flex;
             width: 60%;
@@ -61,6 +66,7 @@
                     button {
                         position: absolute;
                         top: 0;
+
                     }
 
                     .title {
@@ -85,6 +91,7 @@
                         padding: 12px;
                     }
 
+                    .links:hover,
                     button:hover {
                         background-color: black;
                         color: white;
@@ -125,8 +132,10 @@
                         font-weight: 700;
                         cursor: pointer;
                         padding: 12px;
+                        text-decoration: none;
                     }
 
+                    .links:hover,
                     button:hover {
                         background-color: black;
                         color: white;
@@ -171,6 +180,7 @@
                     padding: 12px;
                 }
 
+                .links:hover,
                 button:hover {
                     background-color: black;
                     color: white;
@@ -215,6 +225,7 @@
                 padding: 12px;
             }
 
+            .links:hover,
             button:hover {
                 background-color: black;
                 color: white;
@@ -286,6 +297,7 @@
                         font-family: inherit;
                         margin-left: 20px;
 
+
                         &.cart {
                             font-weight: 600;
                             text-transform: uppercase;
@@ -348,7 +360,7 @@
         color: $dark-blue;
         text-transform: uppercase;
         text-align: center;
-        
+
         .context {
             font-size: 63pt;
             font-weight: 600;
@@ -388,47 +400,6 @@
                 border-radius: 25px;
                 padding: 12px;
                 background-color: $beige;
-            }
-        }
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-        margin:-1px -8px;
-        border:2px solid $grey;
-        background-color: $grey;
-        
-        a{
-            text-decoration: none;
-            color:inherit;
-            color: $teal;
-        }
-
-        .contact {
-            display: flex;
-            flex-direction: column;
-            width:33%;
-        }
-
-        .pages {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-            width:33%;
-            font-size:15pt;
-        }
-
-        .social {
-            display: flex;
-            justify-content: space-evenly;
-            width:33%;
-            font-size:15pt;
-            a{
-                color:black;
             }
         }
     }

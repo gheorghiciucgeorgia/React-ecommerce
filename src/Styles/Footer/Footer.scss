@@ -1,0 +1,42 @@
+@import '../General-style.scss';
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: -1px -8px;
+    border: 2px solid $grey;
+    background-color: $grey;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        color: $teal;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 33%;
+        font-size: 15pt;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        width: 33%;
+        font-size: 15pt;
+
+        a {
+            color: black;
+        }
+    }
+}
