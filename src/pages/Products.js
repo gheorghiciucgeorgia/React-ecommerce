@@ -219,7 +219,6 @@ export default function Products() {
             <button>Load more</button>
           </div>
         </div>
-
       </div>
       <Footer></Footer>
     </div>
