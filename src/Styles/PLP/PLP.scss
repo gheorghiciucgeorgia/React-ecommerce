@@ -1,0 +1,56 @@
+@import '../General-style.scss';
+@import '../PageContent/PageContent.scss';
+
+.page-content {
+    margin-top: 0px !important;
+
+    .PLP-content {
+        margin: 50px auto;
+        width: 80%;
+
+        .PLP-product {
+            border: white 2px solid;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 40px 0px;
+
+            .product-left {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                .left-top {
+                    margin: auto;
+                    width: 100%;
+                    .slick-slider{
+                        .slick-arrow{
+                            display:none !important;
+                        }
+                    }
+                    .Slide {
+                        img{
+                            width: 75%;
+                            margin:auto;
+                        }
+                    }
+                }
+                .left-bottom {
+                    margin: auto;
+                    width: 100%;
+                    .slick-slider{
+                        .slick-arrow{
+                            display:none !important;
+                        }
+                    }
+                    .Slide {
+                        img{
+                            width: 75%;
+                            margin:auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

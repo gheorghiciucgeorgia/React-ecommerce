@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../Styles/Carousel/Carousel.scss';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -32,7 +32,7 @@ export default function Carousel() {
           <img src={img_2} />
           <button className='second-slide-btn'>See more</button>
         </div>
-        <div className='Slide'> 
+        <div className='Slide'>
           <img src={img_3} />
           <p className='third-slide'>Bussines Attire</p>
           <button className='third-slide-btn'>Check out</button>

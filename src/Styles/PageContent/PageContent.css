@@ -230,12 +230,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .page-content .products-preview .arrivals .product {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0px 10px;
+  flex: 1 0 19%;
 }
 .page-content .products-preview .arrivals .product img {
   width: 100%;

@@ -254,11 +254,11 @@
             color: white;
             border-bottom: 2px solid white;
         }
-
         .arrivals {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap:wrap;
 
 
             .product {
@@ -266,6 +266,7 @@
                 flex-direction: column;
                 justify-content: center;
                 margin: 0px 10px;
+                flex: 1 0 19%;
 
                 img {
                     width: 100%;

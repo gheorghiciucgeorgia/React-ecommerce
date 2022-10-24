@@ -369,38 +369,42 @@ body {
 .page-content {
   margin-top: 0px !important;
 }
-.page-content .products-preview {
-  box-shadow: none !important;
+.page-content .PLP-content {
+  margin: 50px auto;
+  width: 80%;
 }
-.page-content .products-preview .arrivals {
-  margin-bottom: 20px;
+.page-content .PLP-content .PLP-product {
+  border: white 2px solid;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px 0px;
 }
-.page-content .products-preview .arrivals .product {
-  padding: 30px;
+.page-content .PLP-content .PLP-product .product-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-.page-content .products-preview .arrivals .product img {
-  box-shadow: none !important;
+.page-content .PLP-content .PLP-product .product-left .left-top {
+  margin: auto;
+  width: 100%;
 }
-.page-content .products-preview .arrivals .product .links {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+.page-content .PLP-content .PLP-product .product-left .left-top .slick-slider .slick-arrow {
+  display: none !important;
 }
-.page-content .products-preview .loading-btn {
-  text-align: center;
-  justify-content: center;
+.page-content .PLP-content .PLP-product .product-left .left-top .Slide img {
+  width: 75%;
+  margin: auto;
 }
-.page-content .products-preview .loading-btn button {
-  border: 2px solid #7D9D9C;
-  border-radius: 25px;
-  padding: 12px;
-  font-family: inherit;
-  font-weight: 600;
-  color: white;
-  font-weight: 600;
-  background-color: #7D9D9C;
-  cursor: pointer;
+.page-content .PLP-content .PLP-product .product-left .left-bottom {
+  margin: auto;
+  width: 100%;
 }
-.page-content .products-preview .loading-btn button:hover {
-  background-color: #0b515c;
-}/*# sourceMappingURL=Products.css.map */
+.page-content .PLP-content .PLP-product .product-left .left-bottom .slick-slider .slick-arrow {
+  display: none !important;
+}
+.page-content .PLP-content .PLP-product .product-left .left-bottom .Slide img {
+  width: 75%;
+  margin: auto;
+}/*# sourceMappingURL=PLP.css.map */

@@ -6,7 +6,6 @@
 
     .products-preview {
         box-shadow: none !important;
-
         .arrivals {
             margin-bottom: 20px;
 
@@ -16,17 +15,31 @@
                 img {
                     box-shadow: none !important;
                 }
+                .links{
+                    text-decoration: none;
+                    color:inherit;
+                    cursor: pointer;
+                }
             }
         }
-        .loading-btn{
+
+        .loading-btn {
             text-align: center;
             justify-content: center;
-            button{
-                border:2px solid $grey;
-                border-radius:25px;
-                padding:12px;
+
+            button {
+                border: 2px solid $teal;
+                border-radius: 25px;
+                padding: 12px;
                 font-family: inherit;
                 font-weight: 600;
+                color:white;
+                font-weight: 600;
+                background-color: $teal;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: $darkish-blue;
             }
         }
     }

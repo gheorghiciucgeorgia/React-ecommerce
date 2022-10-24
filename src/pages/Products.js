@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Products/Products.scss';
 import Navbar from '../components/Navbar';
-import img1 from '../img/products/img1.png'
-import img2 from '../img/products/img2.png'
-import img3 from '../img/products/img3.png'
-import img4 from '../img/products/img4.png'
 import Footer from '../components/Footer';
+import data from '../data';
 
 export default function Products() {
+  const [noOfElements, setnoOfElements]=useState(4);
+  const loadMore=()=>{
+    setnoOfElements(noOfElements+4);
+    console.log(noOfElements)
+  }
+  const slice=data.cardData.slice(0,noOfElements);
   return (
     <div className='products'>
       <div className='page-content'>
@@ -16,207 +20,22 @@ export default function Products() {
           <div className='title'>
             Products
           </div>
-          <div className='arrivals'>
-            <div className='product'>
-              <img src={img1} />
-              <div className='descript-title'>
-                Grey Fuzzy Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
+          <div className='arrivals '>
+            {slice.map((item, index) => {
+              return (
+                <div className='product'>
+                  <img src={item.img} />
+                  <div className='descript-title'><Link to="/products/greyfuzyswater" className='links'>{item.title}</Link></div>
+                  <div className='icons'>
+                    <div className='descript-price'>{item.price}</div>
+                    <button className='cart'>Buy now</button>
+                  </div>
                 </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img2} />
-              <div className='descript-title'>
-                Black Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img3} />
-              <div className='descript-title'>
-                Grey Dress
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $49.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img4} />
-              <div className='descript-title'>
-                Blue Jacket
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $55.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-          </div>
-          <div className='arrivals'>
-            <div className='product'>
-              <img src={img2} />
-              <div className='descript-title'>
-                Grey Fuzzy Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img1} />
-              <div className='descript-title'>
-                Black Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img4} />
-              <div className='descript-title'>
-                Grey Dress
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $49.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img3} />
-              <div className='descript-title'>
-                Blue Jacket
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $55.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-          </div>
-          <div className='arrivals'>
-            <div className='product'>
-              <img src={img4} />
-              <div className='descript-title'>
-                Grey Fuzzy Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img2} />
-              <div className='descript-title'>
-                Black Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img3} />
-              <div className='descript-title'>
-                Grey Dress
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $49.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img1} />
-              <div className='descript-title'>
-                Blue Jacket
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $55.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-          </div>          <div className='arrivals'>
-            <div className='product'>
-              <img src={img1} />
-              <div className='descript-title'>
-                Grey Fuzzy Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img2} />
-              <div className='descript-title'>
-                Black Swater
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $21.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img3} />
-              <div className='descript-title'>
-                Grey Dress
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $49.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
-            <div className='product'>
-              <img src={img4} />
-              <div className='descript-title'>
-                Blue Jacket
-              </div>
-              <div className='icons'>
-                <div className='descript-price'>
-                  $55.99
-                </div>
-                <button className='cart'>Buy now</button>
-              </div>
-            </div>
+              )
+            })}
           </div>
           <div className='loading-btn'>
-            <button>Load more</button>
+            <button onClick={()=>loadMore()}>Load more</button>
           </div>
         </div>
       </div>
