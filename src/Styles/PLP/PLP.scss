@@ -8,6 +8,22 @@
         margin: 50px auto;
         width: 80%;
 
+        .pages{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin:20px;
+            .links{
+                text-decoration: none;
+                color:inherit;
+            }
+            .links:hover{
+                color:$dark-blue;
+            }
+            p{
+                margin:auto 10px;
+            }
+        }
         .PLP-product {
             border: white 2px solid;
             background-color: white;
@@ -20,36 +36,126 @@
                 display: flex;
                 flex-direction: column;
                 width: 50%;
+
                 .left-top {
                     margin: auto;
                     width: 100%;
-                    .slick-slider{
-                        .slick-arrow{
-                            display:none !important;
+
+                    .slick-slider {
+                        .slick-arrow {
+                            display: none !important;
                         }
                     }
+
                     .Slide {
-                        img{
-                            width: 75%;
-                            margin:auto;
+                        img {
+                            width: 50%;
+                            margin: auto;
+                            margin-bottom:20px;
                         }
                     }
                 }
+
                 .left-bottom {
                     margin: auto;
                     width: 100%;
-                    .slick-slider{
-                        .slick-arrow{
-                            display:none !important;
+
+                    .slick-slider {
+                        .slick-arrow {
+                            display: none !important;
                         }
                     }
+
                     .Slide {
-                        img{
-                            width: 75%;
-                            margin:auto;
+                        img {
+                            width: 50%;
+                            margin: auto;
                         }
                     }
                 }
+            }
+
+            .product-right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 6%;
+                height: 0%;
+
+                .title {
+                    font-size: 25pt;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+
+                .price {
+                    font-size: 20pt;
+                    margin-bottom: 20px;
+                }
+                .cart{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    
+                    .add-to-cart{
+                        border:2px solid $grey;
+                        background-color: $grey;
+                        font-family: inherit;
+                        font-weight: 600;
+                        font-size: 12pt;
+                        border-radius: 25px;
+                        padding:12px;
+                        margin-right:20px;
+                        cursor: pointer;
+                    }
+                    .add-to-cart:hover{
+                        background-color: $greyer;
+                    }
+                    .quantity {
+                        border: 2px solid black;
+                        width: 20%;
+                        display: flex;
+                        justify-content: space-between;
+                        border-radius: 25px;
+                        padding: 5px;
+                        margin:auto 0px;
+                        .minus {
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                        }
+    
+                        input {
+                            border: none;
+                            background-color: transparent;
+                            width: 10%;
+                            outline: none;
+                        }
+    
+                        .plus {
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+
+                .description {
+                    font-size: 20pt;
+                    width: 80%;
+                    margin-top: 20px;
+
+                }
+            }
+        }
+        .other-products{
+            margin-top:40px;
+            .title{
+                margin-bottom:20px;
+                text-align: center;
+                font-size: 20pt;
+                font-weight:600;
             }
         }
     }
