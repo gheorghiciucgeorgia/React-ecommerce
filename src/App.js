@@ -3,6 +3,7 @@ import Products from './pages/Products';
 import Home from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import GreyFuzzySweater from './components/GreyFuzzySweater';
+import Cart from './pages/Cart';
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/products' element={<Products/>}></Route>
         <Route path='/products/greyfuzyswater' element={<GreyFuzzySweater/>}></Route>
+        <Route path='/cart' element={<Cart/>} ></Route>
       </Routes>
     </>
 

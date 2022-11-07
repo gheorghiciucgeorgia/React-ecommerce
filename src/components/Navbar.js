@@ -4,6 +4,7 @@ import '../Styles/Navbar/Navbar-style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShirt, faHeart, faSearch, faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import Modal from './Modal';
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -32,7 +33,9 @@ export default function Navbar() {
                     <span className='ellipse'>0</span>
                 </button>
                 <button>
-                    <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
+                    <Link to='/cart'>
+                        <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
+                    </Link>
                     <span className='ellipse'>0</span>
                 </button>
 
