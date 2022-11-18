@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# :sparkles: Getting Started with Creating an React App Ecommerce Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an Ecommerce site. This means an online activity that involves the buying or selling of products. The site is an online store which sells SHIRTS :shirt:.
+![image](https://user-images.githubusercontent.com/80405885/202719938-7873f0e5-8e3e-4294-9611-99388d84b745.png)
 
-## Available Scripts
+## HomePage :house:
+Home Page is composed by a slick carousel automated. It changes the images by 5 seconds. Next is a section of information about shipping and benefits of the present site. Following is 3 cards with links that navigate to the products page. 
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/80405885/202720561-f13dbcff-48c6-4249-9849-44a7c36eb24d.png)
 
-### `npm start`
+A Product Tile with 4 items and a section with Subscription to the Newsletter.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/80405885/202722724-2bfcdb57-186d-49a3-8e21-597bc5ccb07f.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Footer is simple with the name of the site and a conact info, pages and social links.
 
-### `npm test`
+![image](https://user-images.githubusercontent.com/80405885/202723054-9c6b3f63-7465-42e9-a2a7-a3c71e03e693.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Category Landing Page :mushroom:
+Products viewed as column of 4 and rows of 2. The "Load More":arrows_counterclockwise: button loads 2 more rows of products. Clicking on the products it redirects to the Product Detailed Page.
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/80405885/202723288-6624106a-4be9-4b92-88c0-d8d71bcbd994.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Product Detailed Page :four_leaf_clover:
+A Slider of the product thumbnails, it also changed the main image.
+And other products.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/80405885/202725238-1391b3df-01ba-4a7e-ac97-49deb4638809.png)
+![image](https://user-images.githubusercontent.com/80405885/202725599-b2e2f825-2ed0-415c-8868-c4573c153f05.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cart Page :watermelon:
+Clicking on the buy now buttons on the products page those items are added in the cart page. On the Cart Page the items are displayed with their main image and with the changable amount of the item and also with the price that is influented by the amount of it and also a removing item button with the :x: in it. The total that adds all the prices of the items.
 
-### `npm run eject`
+![image](https://user-images.githubusercontent.com/80405885/202725806-b9d704c5-cce6-425c-adb4-7728616e8748.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
