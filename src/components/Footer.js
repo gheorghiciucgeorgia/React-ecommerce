@@ -11,7 +11,7 @@ export default function Footer() {
         <div className='footer'>
             <div className='contact'>
                 <p><FontAwesomeIcon icon={faShirt} />Shirt</p>
-                <div class="adress">
+                <div className='adress'>
                     <p>Pennsylvania, Bridgeville, 2409 Pine Street, 15017</p>
                     <p>
                         <a href='tel:412-292-3826'>412-292-3826</a>
@@ -22,7 +22,7 @@ export default function Footer() {
 
                 </div>
             </div>
-            <div class="pages">
+            <div className='pages'>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/products">Products</Link>

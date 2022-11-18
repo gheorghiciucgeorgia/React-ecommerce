@@ -7,18 +7,22 @@ import Modal from './Modal';
 import { Link } from 'react-router-dom';
 
 
-export default function Navbar() {
+export default function Navbar({cart}) {
 
     const [openModal, setOpenModal] = useState(false)
     function modalOpen() {
         setOpenModal(true);
     }
+
+
     return (
         <nav className='navbar'>
-            <div className='left'>
-                <p><FontAwesomeIcon className="logo" icon={faShirt} /> </p>
-                <p className='title'>Shirt</p>
-            </div>
+            <Link className='logo-link' to='/'>
+                <div className='left'>
+                    <p><FontAwesomeIcon className="logo" icon={faShirt} /> </p>
+                    <p className='title'>Shirt</p>
+                </div>
+            </Link>
             <div className='center'>
                 <p><FontAwesomeIcon className="search-icon" icon={faSearch} /></p>
                 <input className="search-box" type="text" />
@@ -33,7 +37,7 @@ export default function Navbar() {
                     <span className='ellipse'>0</span>
                 </button>
                 <button>
-                    <Link to='/cart'>
+                    <Link className='cart-link' to='/cart'>
                         <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
                     </Link>
                     <span className='ellipse'>0</span>

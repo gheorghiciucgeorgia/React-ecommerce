@@ -25,21 +25,21 @@ export default function Carousel() {
         <div className='Slide'>
           <p className='first-slide'>-20% sale</p>
           <p className='first-slidis'>Explore the new Collection</p>
-          <img src={img_1} />
+          <img src={img_1} alt=''/>
         </div>
         <div className='Slide'>
           <p className='second-slide'>Autumn-Winter Collection 2021</p>
-          <img src={img_2} />
+          <img src={img_2} alt=''/>
           <button className='second-slide-btn'>See more</button>
         </div>
         <div className='Slide'>
-          <img src={img_3} />
+          <img src={img_3} alt=''/>
           <p className='third-slide'>Bussines Attire</p>
           <button className='third-slide-btn'>Check out</button>
         </div>
         <div className='Slide'>
           <p className='fourth-slide'>It`s time for sweaters and coziness. Winter is here and it`s better to be hot than not.</p>
-          <img src={img_4} />
+          <img src={img_4} alt=''/>
         </div>
       </Slider>
     </div>

@@ -5,7 +5,9 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import data from '../data';
 
-export default function Products(props) {
+
+export default function Products({handleClick}) {
+
   const [noOfElements, setnoOfElements] = useState(8);
   const loadMore = () => {
     setnoOfElements(noOfElements + 4);
@@ -13,8 +15,6 @@ export default function Products(props) {
   }
   const slice = data.cardData.slice(0, noOfElements);
 
-  //adding items to cart
- 
   return (
     <div className='products'>
       <div className='page-content'>
@@ -28,14 +28,14 @@ export default function Products(props) {
             Products
           </div>
           <div className='arrivals '>
-            {slice.map((item, index, handleClick) => {
+            {slice.map((item, index) => {
               return (
-                <div className='product'>
+                <div className='product' key={index}>
                   <img src={item.img} />
                   <div className='descript-title'><Link to="/products/greyfuzyswater" className='links'>{item.title}</Link></div>
                   <div className='icons'>
-                    <div className='descript-price'>{item.price}</div>
-                    <button className='cart' >Buy now</button>
+                    <div className='descript-price'>${item.price}</div>
+                    <button className='cart' onClick={() => handleClick(item)}>Buy now</button>
                   </div>
                 </div>
               )

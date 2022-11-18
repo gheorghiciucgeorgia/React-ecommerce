@@ -1,0 +1,29 @@
+body {
+  background-color: #F0EBE3;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cart-component {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+}
+.cart-component .cart-items-header {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px;
+}
+.cart-component .cart-items-components .cart-list .cart-box {
+  display: flex;
+  flex-direction: row;
+}
+.cart-component .cart-items-components .cart-list .cart-box div img {
+  width: 50%;
+}/*# sourceMappingURL=Cart.css.map */

@@ -7,7 +7,7 @@ import PageContent from '../components/PageContent';
 export default function Home() {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
             <Carousel />
             <PageContent />
         </div>

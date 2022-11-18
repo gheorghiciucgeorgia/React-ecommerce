@@ -37,7 +37,7 @@ export default function Modal({ closeModal }) {
                             <label >Password</label>
                             <input type="password" {...register("Password", { required: 'Password is required!', minLength: { value: 8, message: 'Minimum 8 characters!' } })} />
                             <p className='errorMessage'>{errors.Password?.message}</p>
-                            <div className='footer'>
+                            <div className='modal-footer'>
                                 <input className='logbtn' type="submit" value="Log In" />
                             </div>
                         </form>
